@@ -6,11 +6,10 @@
         public $price;
 
         public function formatPrice(){
-            return number_format($this->price, 2);
+            return number_format($this->price, 2, ',', '.');
         }
 
     }
-
     $auto1 = new Product();
     $auto1->naam = "Audi R8";
     $auto1->price = 302653.79;
